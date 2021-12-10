@@ -4,3 +4,6 @@ print(my_array)
 
 a = "ciao"
 print (a[1])
+
+import math
+print(math.pi)
