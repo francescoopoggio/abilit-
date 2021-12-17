@@ -37,6 +37,48 @@ for i in squares:
   squares[i] = squares[i] +1 
   #print(squares[i])
 
-  
+  i = 1
+while i < 6:
+  print(i)
+  if i == 3:
+    break
+  i += 1
+print('The while loop is over.')
+
+
+num = [1, 2, 3, 4, 5,6,7]
+for n in num :
+   print('Il numero', n, 'è', end=' ')
+   if n%2 == 0:
+      print('pari')
+   else:        
+      print('dispari')
+
+
+
+guess = int(input('Enter 1, 2 or 3 '))
+
+if guess == 1 :
+ print ('Questo è un esempio if ')
+ while True:
+   s = input('Enter something : ')
+   if s == 'quit':
+     break
+   print('Length of string is', len(s))
+   print('Done')
+if guess == 2 :
+ print ('Questo è un esempio while ')
+
+ 
+
+if guess == 3 :   
+  print ('Questo è un esempio for')
+  s = int(input('Enter a number : '))
+  a = list(range(s))
+  for n in a :
+   print(n)
+
+
+
 
 
