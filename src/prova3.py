@@ -66,7 +66,7 @@ class animali:
     attr2 = "cane"
  
     
-    def fun(self):
+    def fun(self)
         print("Nel giardino c'è un", self.attr1)
         print("Non troviamo il ", self.attr2)
  
@@ -86,8 +86,36 @@ class Employee:
       self.salary = salary
       Employee.empCount += 1
    
-   def displayCount(self):
+   def displayCount(self)
      print "Total Employee %d" % Employee.empCount
 
-   def displayEmployee(self):
+   def displayEmployee(self)
       print "Name : ", self.name,  ", Salary: ", self.salary
+
+num0 = 10
+
+try:
+    num1 = input("Primo numero :")
+    num2 = input("Secondo numero :")
+    result = (int(num1) * int(num2))/(num0 * int(num2))
+except ValueError as ve:
+    print(ve)
+    exit()
+except ZeroDivisionError as zde:
+    print(zde)
+    exit()
+except TypeError as te:
+    print(te)
+    exit()
+except:
+    print('Errore nuovo!')
+    exit()
+
+print (result)   
+
+L1 = [1,2,3,4,5]
+L2 = ['a','b','c','d','e']
+
+zip_L1L2 = zip(L1,L2)
+
+print(zip_L1L2)
